@@ -1,6 +1,7 @@
 #!/bin/sh
 
-cargo build --release --target-dir .
+echo "- rust_dynamiclib/build.sh . . ."
+cargo build --release --target-dir . --quiet
 mv ./release/librust_dynamiclib.so .
 
 strip librust_dynamiclib.so

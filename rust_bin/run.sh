@@ -1,3 +1,5 @@
 #!/bin/sh
 
-cargo run
+echo "- rust_bin/run.sh . . ."
+cargo run --quiet
+

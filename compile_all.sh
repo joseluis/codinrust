@@ -2,7 +2,7 @@
 
 set -e # stops on error
 
-echo "Trying to export functions from Rust and call them from Odin:"
+echo "Compiling libraries in Rust and using them from Odin:"
 
 cd rust_dynamiclib
 ./build.sh
@@ -17,7 +17,7 @@ cd odin_bin
 cd ..
 
 echo
-echo "Trying to export functions from Odin and call them from Rust:"
+echo "Compiling libraries in Odin and using them from Rust:"
 
 cd odin_dynamiclib
 ./build.sh
