@@ -1,0 +1,11 @@
+[package]
+name = "rust_dynamiclib"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# name = "rust_dynamiclib"
+
+crate-type = ["cdylib"]
+
+[dependencies]

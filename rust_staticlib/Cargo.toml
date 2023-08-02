@@ -1,0 +1,12 @@
+[package]
+name = "rust_staticlib"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# name = "rust_staticlib"
+
+# crate-type = ["cdylib"]
+crate-type = ["staticlib"]
+
+[dependencies]
