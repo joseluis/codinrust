@@ -12,7 +12,7 @@ import "core:runtime"
 print_hello_odin :: proc "c" () {
 	context = runtime.default_context()
 
-	fmt.println("Hello from Odin! (shared dynamic lib via C FFI)");
+	fmt.println("Hello from Odin! (compiled in `odin_dynamiclib`)");
 }
 
 @export
