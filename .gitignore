@@ -8,9 +8,9 @@ Cargo.lock
 /odin_lib/libodin_lib_static.a
 /odin_lib/libodin_lib_static.lib
 
-/rust_lib_dynamic/librust_lib_shared.so
-/rust_lib_dynamic/librust_lib_shared.dll
-/rust_lib_dynamic/librust_lib_shared.dylib
+/rust_lib_shared/librust_lib_shared.so
+/rust_lib_shared/librust_lib_shared.dll
+/rust_lib_shared/librust_lib_shared.dylib
 /rust_lib_static/librust_lib_static.a
 /rust_lib_static/librust_lib_static.lib
 
