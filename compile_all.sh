@@ -13,7 +13,7 @@ cd rust_lib_static
 ./build.sh
 cd ..
 
-cd odin_bin_static_loading
+cd odin_bin
 ./run.sh
 cd ..
 

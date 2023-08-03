@@ -11,7 +11,7 @@ $ ./compile_all.sh
   compiling shared lib (*.so | *.dll | *.dylib) . . .
 - rust_lib_static/build.sh . . .
   compiling static lib (*.a | *.lib) . . .
-- odin_bin_static_loading/run.sh . . .
+- odin_bin/run.sh (static_loading) . . .
 ---
 Hello from Odin! (static loading)
 Hello from Rust! (compiled in `rust_lib_shared`)

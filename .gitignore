@@ -14,4 +14,5 @@ Cargo.lock
 /rust_lib_static/librust_lib_static.a
 /rust_lib_static/librust_lib_static.lib
 
-/odin_bin_static_loading/main
+/odin_bin/static_loading
+/odin_bin/dynamic_loading
