@@ -6,7 +6,7 @@
 use libloading::{Library, Symbol};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    println!("Hello from Rust.");
+    println!("Hello from Rust. (dynamic loading)");
 
     /* load shared lib */
 
