@@ -1,0 +1,15 @@
+[package]
+name = "rust_bin"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "dynamic_loading"
+path = "src/dynamic_loading.rs"
+
+# [[bin]]
+# name = "static_loading"
+# path = "src/static_loading.rs"
+
+[dependencies]
+libloading = "0.8.0"

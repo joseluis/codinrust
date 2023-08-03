@@ -1,7 +1,0 @@
-[package]
-name = "rust_bin_dynamic_loading"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-libloading = "0.8.0"
