@@ -8,14 +8,15 @@ package odinlib
 import "core:fmt"
 import "core:runtime"
 
-@export
+@(export)
 print_hello_odin :: proc "c" () {
 	context = runtime.default_context()
 
-	fmt.println("Hello from Odin! (compiled in `odin_lib`)");
+	fmt.println("Hello from Odin! (compiled in `odin_lib`)")
 }
 
-@export
+@(export)
 add :: proc "c" (a, b: i32) -> i32 {
 	return a + b
 }
+
