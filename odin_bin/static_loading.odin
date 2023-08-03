@@ -1,6 +1,9 @@
-// PURPOSE: call exported functions from Rust using the C interface
+// Call exported functions from Rust using the C interface
+// using static loading (supports shared and static libraries).
 //
-// https://odin-lang.org/news/binding-to-c/
+// # Links
+// - https://odin-lang.org/news/binding-to-c/
+// - https://odin-lang.org/news/binding-to-c/#foreign-blocks
 
 package main
 

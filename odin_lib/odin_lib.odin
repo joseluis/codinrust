@@ -1,7 +1,8 @@
-// PURPOSE: Export Odin functions using the C interface (dynamic library)
+// Export Odin functions using the C interface (both dynamic and static libraries)
 //
-// https://odin-lang.org/news/calling-odin-from-python/
-// https://odin-lang.org/docs/overview/#explicit-context-definition
+// # Links
+// - https://odin-lang.org/news/calling-odin-from-python/
+// - https://odin-lang.org/docs/overview/#explicit-context-definition
 
 package odinlib
 

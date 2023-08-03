@@ -1,7 +1,8 @@
-// Call exported functions from Odin using the C interface
-// using dynamic loading (Only supports shared libraries).
-//
-// - https://docs.rs/libloading
+//! Call exported functions from Odin using the C interface
+//! using dynamic loading (Only supports shared libraries).
+//!
+//! # Links
+//! - <https://docs.rs/libloading>
 
 use libloading::{Library, Symbol};
 

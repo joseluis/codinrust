@@ -1,9 +1,10 @@
-// Call exported functions from Odin using the C interface
-// using static loading (supports shared and static libraries).
-//
-// - https://doc.rust-lang.org/nomicon/ffi.html#calling-foreign-functions
-// - https://doc.rust-lang.org/nomicon/ffi.html#linking
-// - https://doc.rust-lang.org/reference/items/external-blocks.html#attributes-on-extern-blocks
+//! Call exported functions from Odin using the C interface
+//! using static loading (supports shared and static libraries).
+//!
+//! # Links
+//! - <https://doc.rust-lang.org/nomicon/ffi.html#calling-foreign-functions>
+//! - <https://doc.rust-lang.org/nomicon/ffi.html#linking>
+//! - <https://doc.rust-lang.org/reference/items/external-blocks.html#attributes-on-extern-blocks>
 
 /* load shared lib */
 
