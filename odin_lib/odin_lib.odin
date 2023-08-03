@@ -12,11 +12,10 @@ import "core:runtime"
 print_hello_odin :: proc "c" () {
 	context = runtime.default_context()
 
-	fmt.println("Hello from Odin! (compiled in `odin_dynamiclib`)");
+	fmt.println("Hello from Odin! (compiled in `odin_lib`)");
 }
 
 @export
 add :: proc "c" (a, b: i32) -> i32 {
 	return a + b
 }
-

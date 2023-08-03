@@ -19,11 +19,9 @@ cd ..
 echo
 echo "Compiling libraries in Odin and using them from Rust:"
 
-cd odin_dynamiclib
+cd odin_lib
 ./build.sh
 cd ..
-
-# no odin_staticlib for now
 
 cd rust_bin
 ./run.sh
