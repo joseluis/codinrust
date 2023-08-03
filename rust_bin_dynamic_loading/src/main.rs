@@ -10,7 +10,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     /* load shared lib */
 
-    let lib = unsafe { Library::new("../odin_lib/odin_lib.so")? };
+    let lib = unsafe { Library::new("../odin_lib/libodin_lib_shared.so")? };
     let unsafe_print_hello_odin_shared =
         unsafe { lib.get::<Symbol<unsafe extern "C" fn()>>(b"print_hello_odin")? };
     let print_hello_odin_shared = || unsafe { unsafe_print_hello_odin_shared() };

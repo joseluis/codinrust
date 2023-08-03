@@ -5,7 +5,7 @@ set -e # stops on error
 echo "# Compiling libraries in Rust and using them from Odin:"
 echo "# -----------------------------------------------------"
 
-cd rust_lib_dynamic
+cd rust_lib_shared
 ./build.sh
 cd ..
 

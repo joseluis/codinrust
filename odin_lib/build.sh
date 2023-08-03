@@ -2,13 +2,13 @@
 
 echo "- odin_lib/build.sh . . ."
 
-# generate dynamic lib
+# compile shared lib
 echo "  compiling shared lib (*.so | *.dll | *.dylib) . . ."
-odin build odin_lib.odin -file -build-mode:dll
+odin build odin_lib.odin -file -build-mode:dll -out:libodin_lib_shared
 
-# generate static lib
+# compile static lib
 echo "  compiling static lib (*.a | *.lib) . . ."
-odin build odin_lib.odin -file -build-mode:obj
-llvm-ar rcs odin_lib.a odin_lib.o
-rm odin_lib.o
+odin build odin_lib.odin -file -build-mode:obj -out:libodin_lib_static
+ar rcs libodin_lib_static.a libodin_lib_static.o
+rm libodin_lib_static.o
 

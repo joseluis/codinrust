@@ -2,14 +2,15 @@ target/
 Cargo.lock
 .rustc_info.json
 
-/odin_lib/odin_lib.so
-/odin_lib/odin_lib.dll
-/odin_lib/odin_lib.dylib
-/odin_lib/odin_lib.a
+/odin_lib/libodin_lib_shared.so
+/odin_lib/libodin_lib_shared.dll
+/odin_lib/libodin_lib_shared.dylib
+/odin_lib/libodin_lib_static.a
+/odin_lib/libodin_lib_static.lib
 
-/rust_lib_dynamic/librust_lib_dynamic.so
-/rust_lib_dynamic/librust_lib_dynamic.dll
-/rust_lib_dynamic/librust_lib_dynamic.dylib
+/rust_lib_dynamic/librust_lib_shared.so
+/rust_lib_dynamic/librust_lib_shared.dll
+/rust_lib_dynamic/librust_lib_shared.dylib
 /rust_lib_static/librust_lib_static.a
 /rust_lib_static/librust_lib_static.lib
 

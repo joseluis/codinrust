@@ -1,10 +1,10 @@
 [package]
-name = "rust_lib_dynamic"
+name = "rust_lib_shared"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-# name = "rust_lib_dynamic"
+# name = "rust_lib_shared"
 
 crate-type = ["cdylib"]
 
