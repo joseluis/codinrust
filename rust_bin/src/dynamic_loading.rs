@@ -1,7 +1,7 @@
-// PURPOSE: call exported functions from Odin using the C interface
+// Call exported functions from Odin using the C interface
+// using dynamic loading (Only supports shared libraries).
 //
-// Uses dynamic loading. Only supports loading dynamic libraries.
-// https://docs.rs/libloading
+// - https://docs.rs/libloading
 
 use libloading::{Library, Symbol};
 

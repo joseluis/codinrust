@@ -7,9 +7,9 @@ edition = "2021"
 name = "dynamic_loading"
 path = "src/dynamic_loading.rs"
 
-# [[bin]]
-# name = "static_loading"
-# path = "src/static_loading.rs"
+[[bin]]
+name = "static_loading"
+path = "src/static_loading.rs"
 
 [dependencies]
 libloading = "0.8.0"

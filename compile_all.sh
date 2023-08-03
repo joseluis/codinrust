@@ -25,6 +25,6 @@ cd odin_lib
 ./build.sh
 cd ..
 
-cd rust_bin_dynamic_loading
+cd rust_bin
 ./run.sh
 
