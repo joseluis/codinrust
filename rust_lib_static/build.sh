@@ -2,7 +2,7 @@
 #
 
 echo "- rust_lib_static/build.sh . . ."
-echo "  compiling static lib: *.a | *.lib"
+echo "  compiling static lib (*.a | *.lib) . . ."
 cargo build --release --target-dir . --quiet
 mv ./release/librust_lib_static.a .
 

@@ -1,5 +1,5 @@
 [package]
-name = "rust_bin_dynamicloading"
+name = "rust_bin_dynamic_loading"
 version = "0.1.0"
 edition = "2021"
 
