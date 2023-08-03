@@ -7,14 +7,14 @@ package main
 import "core:fmt"
 // import "core:c"
 
-foreign import rust_lib_shared "../rust_lib_shared/librust_lib_shared.so"
-foreign import rust_lib_static "../rust_lib_static/librust_lib_static.a"
+foreign import rust_lib_shared "../rust_lib/librust_lib_shared.so"
+foreign import rust_lib_static "../rust_lib/librust_lib_static.a"
 
 foreign rust_lib_shared {
-	print_hello_rust_lib_shared :: proc() ---
+	@(link_name="print_hello_rust_lib") print_hello_rust_lib_shared:: proc() ---
 }
 foreign rust_lib_static {
-	print_hello_rust_lib_static :: proc() ---
+	@(link_name="print_hello_rust_lib") print_hello_rust_lib_static:: proc() ---
 }
 
 main :: proc() {

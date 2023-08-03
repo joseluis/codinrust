@@ -1,0 +1,22 @@
+[package]
+name = "rust_lib"
+version = "0.1.0"
+edition = "2021"
+
+# common reexported library
+[lib]
+
+# FFI shared library
+[[example]]
+name = "rust_lib_shared"
+path = "src/examples/rust_lib_shared.rs"
+crate-type = ["cdylib"]
+
+# FFI static library
+[[example]]
+name = "rust_lib_static"
+path = "src/examples/rust_lib_static.rs"
+crate-type = ["staticlib"]
+
+
+

@@ -9,13 +9,12 @@ $ ./compile_all.sh
 # -----------------------------------------------------
 - rust_lib_shared/build.sh . . .
   compiling shared lib (*.so | *.dll | *.dylib) . . .
-- rust_lib_static/build.sh . . .
   compiling static lib (*.a | *.lib) . . .
 - odin_bin/run.sh (static_loading) . . .
 ---
 Hello from Odin! (static loading)
-Hello from Rust! (compiled in `rust_lib_shared`)
-Hello from Rust! (compiled in `rust_lib_static`)
+Hello from Rust! (compiled in `rust_lib`)
+Hello from Rust! (compiled in `rust_lib`)
 
 # Compiling libraries in Odin and using them from Rust:
 # -----------------------------------------------------
