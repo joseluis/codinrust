@@ -22,8 +22,14 @@ Hello from Rust! (compiled in `rust_lib_static`)
 - odin_lib/build.sh . . .
   compiling shared lib (*.so | *.dll | *.dylib) . . .
   compiling static lib (*.a | *.lib) . . .
-- rust_bin_dynamic_loading/run.sh . . .
+- rust_bin/run.sh (dynamic_loading). . .
 ---
 Hello from Rust. (dynamic loading)
+Hello from Odin! (compiled in `odin_lib`)
+
+- rust_bin/run.sh (static_loading). . .
+---
+Hello from Rust. (static loading)
+Hello from Odin! (compiled in `odin_lib`)
 Hello from Odin! (compiled in `odin_lib`)
 ```
