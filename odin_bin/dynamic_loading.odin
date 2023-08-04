@@ -14,19 +14,16 @@ main :: proc() {
 
 	// load dynamic library
 
-	library_names := []string{
-		"../rust_lib/librust_lib_shared.so",
-		"../rust_lib/librust_lib_shared.dylib",
-		"../rust_lib/librust_lib_shared.dll"
-	};
-
-	rust_lib_shared: dynlib.Library
-	ok1: bool
-	for library_name, _ in library_names {
-		rust_lib_shared, ok1 = dynlib.load_library(library_name)
-		if ok1 {
-			break
-		}
+	when ODIN_OS == .Linux {
+		rust_lib_shared, ok1 := dynlib.load_library("../rust_lib/librust_lib_shared.so")
+	} else when ODIN_OS == .Darwin {
+		rust_lib_shared, ok1 := dynlib.load_library("../rust_lib/librust_lib_shared.dylib")
+	} else when ODIN_OS == .Windows {
+		rust_lib_shared, ok1 := dynlib.load_library("../rust_lib/librust_lib_shared.dll")
+	}
+	if !ok1 {
+		fmt.println("There was an error loading the library.")
+		return
 	}
 
 	// load function
