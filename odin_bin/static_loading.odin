@@ -8,10 +8,17 @@
 package main
 
 import "core:fmt"
-// import "core:c"
 
-foreign import rust_lib_shared "../rust_lib/librust_lib_shared.so"
-foreign import rust_lib_static "../rust_lib/librust_lib_static.a"
+when ODIN_OS == .Linux {
+	foreign import rust_lib_shared "../rust_lib/librust_lib_shared.so"
+	foreign import rust_lib_static "../rust_lib/librust_lib_static.a"
+} else when ODIN_OS == .Darwin {
+	foreign import rust_lib_shared "../rust_lib/librust_lib_shared.dylib"
+	foreign import rust_lib_static "../rust_lib/librust_lib_static.a"
+} else when ODIN_OS == .Windows {
+	foreign import rust_lib_shared "../rust_lib/librust_lib_shared.dll"
+	foreign import rust_lib_static "../rust_lib/librust_lib_static.lib"
+}
 
 foreign rust_lib_shared {
 	@(link_name = "print_hello_rust_lib")
