@@ -1,18 +1,30 @@
-A series of examples that showcases how to interoperate between [Rust] and [Odin]
+# codinrust
 
+A series of examples to showcase how to interoperate between
+[C], [Odin] and [Rust] languages.
+
+[C]: https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html
 [Rust]: https://www.rust-lang.org/
 [Odin]: https://odin-lang.org/
 
-It shows how to generate both shared and static libraries using C FFI and how to import them both dynamically and statically, everything from both Rust and Odin.
+It shows how to generate both shared and static libraries using C FFI, how to
+import them both dynamically and statically, in each language.
 
-# Platform support
+## Status
 
-- [x] Linux
-- [x] Macos
-- [ ] Windows Cygwin (untested)
+- Supported languages
+  - [ ] C
+  - [x] Odin
+  - [x] Rust
+- Supported platforms
+  - [x] Linux
+  - [x] Macos
+  - [ ] Windows Cygwin (untested)
+
+## Example
 
 ```
-$ ./compile_all.sh
+$ ./do_all.sh
 # Compiling libraries in Rust and using them from Odin:
 # -----------------------------------------------------
 - rust_lib_shared/build.sh . . .
@@ -45,4 +57,3 @@ Hello from Rust. (static loading)
 Hello from Odin! (compiled in `odin_lib`)
 Hello from Odin! (compiled in `odin_lib`)
 ```
-
